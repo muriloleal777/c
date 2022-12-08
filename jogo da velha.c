@@ -23,7 +23,7 @@ int main(){
             vitoria=1;
         }
     }
-    while(jogador==2){
+    while(jogador==2 && vitoria==0){
         printf("\nJogador 2: Digite qual linha voce quer marcar com X.");
         scanf("%i", &linha);
         printf("\nJogador 2: Agora digite qual coluna você quer marcar com X.");

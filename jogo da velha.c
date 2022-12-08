@@ -6,7 +6,8 @@ char matriz[3][3]={
  {'-', '-', '-'} };
 int linha, coluna, jogador=1, vitoria=0;
 int main(){
-    while(jogador==1 && vitoria==0){
+    while(vitoria==0){
+    while(jogador==1){
         printf("\nJogador 1: Digite qual linha voce quer marcar com X.");
         scanf("%i", &linha);
         printf("\nJogador 1: Agora digite qual coluna você quer marcar com X.");
@@ -23,7 +24,7 @@ int main(){
             vitoria=1;
         }
     }
-    while(jogador==2 && vitoria==0){
+    while(jogador==2){
         printf("\nJogador 2: Digite qual linha voce quer marcar com X.");
         scanf("%i", &linha);
         printf("\nJogador 2: Agora digite qual coluna você quer marcar com X.");
@@ -39,5 +40,6 @@ int main(){
             printf("\nJogador 2 ganhou!");
             vitoria=1;
         }
+    }
     }
 }
